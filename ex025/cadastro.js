@@ -1,0 +1,1 @@
+Sua assinatura foi efetuada por completo, em breve retornaremos
