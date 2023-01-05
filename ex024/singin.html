@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing in</title>
+</head>
+<body>
+    <h1>Sing in</h1>
+    <form action="cadastro.js" method="post">
+        <fieldset>
+        <div>
+            <label for="inon">Nome completo: </label>
+            <input type="text" name="nome" id="inon" required minlength="15" maxlength="35" placeholder="Digite seu nome" >
+        </div>
+        <div>
+            <label for="imail">Email: </label>
+            <input type="email" name="email" id="imail" required placeholder="Digite seu email" autocomplete="email">
+        </div>
+        <div>
+            <label for="itel">Telefone: </label>
+            <input type="tel" name="telefone" id="itel" autocomplete="tel" pattern="\(\d{2}\)^\d{4,5}-\d{4}$" placeholder="(xx)x xxxx-xxxx" required> 
+        </div>
+        <div>
+            <label for="iadr">Endereço:</label>
+            <input type="text" name="endereco" id="iadr" required autocomplete="street-address" placeholder="Digite seu endereço">
+        </div>
+        <div>
+            <label for="isen">Senha: </label>
+            <input type="password" name="senha" id="isen" autocomplete="new-password" required placeholder="8-15 caracteres">
+        </div>
+        <div>
+            <label for="isen">Repita sua senha: </label>
+            <input type="password" name="consenha" id="isen" autocomplete="password" required placeholder="Confirme a senha">
+        </div>
+        <div>
+        <div>
+            <input type="checkbox" name="verificar" id="icheck">
+            <label for="icheck">Deseja receber notificações de novidades sobre o nosso site?</label>
+        </div>
+        </div>
+        <div>
+            <input type="submit" value="Sing in">
+           <a href="form.html"><input type="button" value="Log in"></a>
+        </div>
+    </fieldset>
+    </form>
+</body>
+</html>
