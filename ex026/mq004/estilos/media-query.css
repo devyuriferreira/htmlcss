@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+
+/* Todas as demais midias */
+
+@media print {
+
+    * {
+        font-family: 'Courier New', Courier, monospace;
+        ;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black
+    }
+
+    main {
+        border: 2px solid black;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: block;}
+    #pc {display: none;}
+    #tv {display:none;}
+}
+
+/* @media screen and (max-width: 600px) {
+
+    pequenas telas
+    ---------------
+
+} */
+
+/* @media screen and (min-width: 600px) and (max-width: 768px) {
+
+    mobile first
+    ------------
+} */
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+
+    #phone {display: none;}
+    #tablet {display: block;}
+    #print {display: none;}
+    #pc {display: none;}
+    #tv {display:none;}
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1199px) {
+      
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+         
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #comp {display: block;}
+    #tv {display:none;}
+    
+}
+
+@media only screen and (min-width: 1200px) {
+
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main {
+        width: 700px;
+    }
+
+    #phone {display: none;}
+    #tablet {display: none;}
+    #print {display: none;}
+    #comp {display: none;}
+    #tv {display:block;}
+}
