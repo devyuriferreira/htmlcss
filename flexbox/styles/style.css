@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: first baseline;
+    background-color: red;
+    color: white;
+    height: 300px;
+}
+
+.flex-item {
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    background-color: blue;
+}
